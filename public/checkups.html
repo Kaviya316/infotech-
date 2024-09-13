@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkups</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&family=Oswald:wght@500&family=Open+Sans:wght@300&family=Playfair+Display:wght@700&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <!-- Navigation menu as previously defined -->
+        </nav>
+        <main>
+            <section class="checkups">
+                <header>Medical Checkups</header>
+                <form id="checkupForm">
+                    <div class="form-group">
+                        <label for="checkupType">Checkup Type:</label>
+                        <select id="checkupType" name="checkupType" required>
+                            <option value="general">General</option>
+                            <option value="dental">Dental</option>
+                            <option value="optical">Optical</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <button type="submit">Schedule Checkup</button>
+                </form>
+                <div id="checkupMessage" class="response-message"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

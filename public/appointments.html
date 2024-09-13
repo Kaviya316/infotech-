@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&family=Oswald:wght@500&family=Open+Sans:wght@300&family=Playfair+Display:wght@700&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <!-- Navigation menu as previously defined -->
+        </nav>
+        <main>
+            <section class="appointments">
+                <header>Manage Appointments</header>
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label for="appointmentDate">Appointment Date:</label>
+                        <input type="date" id="appointmentDate" name="appointmentDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="timeShift">Time Shift:</label>
+                        <select id="timeShift" name="timeShift" required>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorName">Doctor's Name:</label>
+                        <select id="doctorName" name="doctorName" required>
+                            <option value="">Select a doctor</option>
+                            <option value="Dr. Smith">Dr. Smith</option>
+                            <option value="Dr. Johnson">Dr. Johnson</option>
+                            <option value="Dr. Williams">Dr. Williams</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason for Appointment:</label>
+                        <textarea id="reason" name="reason" rows="4" placeholder="Enter reason for appointment" required></textarea>
+                    </div>
+                    <button type="submit">Schedule Appointment</button>
+                </form>
+                <div id="appointmentMessage" class="response-message"></div>
+
+                <h2>Scheduled Appointments</h2>
+                <div id="appointmentsList" class="appointments-list">
+                    <!-- List of scheduled appointments will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

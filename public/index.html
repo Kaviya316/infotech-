@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&family=Oswald:wght@500&family=Open+Sans:wght@300&family=Playfair+Display:wght@700&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+            <nav class="navbar-header">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                
+                <a href="emergency.html" class="btn-alert">Emergency Alert</a>
+            </nav>
+            <div class="sidebar-toggle" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        
+        <div class="sidebar hidden" id="sidebar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="appointments.html">Book an Appointment</a></li>
+                <li><a href="emergency.html" class="btn-alert">Emergency Alert</a></li>
+                <li><a href="checkups.html">Checkups</a></li>
+                <li><a href="reminders.html">Daily Reminders</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <section class="hero">
+                <h1>Welcome to the Patient Engagement Platform</h1>
+                <p>Your health and wellness are our top priority. Schedule appointments, get reminders, and manage your health effortlessly.</p>
+                <a href="appointments.html" class="cta-button">Book an Appointment</a>
+            </section>
+            <section class="features">
+                <h2>Key Features</h2>
+                <div class="feature-box">
+                    <h3>Emergency Alerts</h3>
+                    <p>Quickly notify your family and hospital during a medical emergency with a single click.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Health Reminders</h3>
+                    <p>Stay on top of your health by receiving regular reminders for medications, checkups, and wellness routines.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Secure Medical Records</h3>
+                    <p>Store and access all your medical records in one secure place.</p>
+                </div>
+            </section>
+            <section class="testimonial">
+                <h2>What Our Users Say</h2>
+                <blockquote>
+                    "This platform has made managing my appointments and health records so easy!"
+                    <cite>— Patient A</cite>
+                </blockquote>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Engagement Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&family=Oswald:wght@500&family=Open+Sans:wght@300&family=Playfair+Display:wght@700&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div id="login-page" class="page">
+        <div class="login-container">
+            <header>Login</header>
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <!-- Homepage -->
+    <div id="homepage" class="page hidden">
+       
+
+        <div class="main-content">
+           
+
+            <div class="content">
+                
+                <div class="emergency-alert-box">
+                    <h3>Emergency Alert</h3>
+                    <label for="alert-type">Select Alert Type:</label>
+                    <select id="alert-type">
+                        <option value="medical">Medical</option>
+                        <option value="accident">Accident</option>
+                        <option value="fire">Fire</option>
+                    </select>
+                    <div class="location">
+                        <p>Send Location:</p>
+                        <button onclick="sendLocation()">Send Location</button>
+                    </div>
+                    <div class="call">
+                        <button onclick="callEmergency()">Call</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
