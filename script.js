@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const sidebarToggle = document.querySelector('.sidebar-toggle');
+  const sidebar = document.querySelector('.sidebar');
+
+  // Toggle the sidebar visibility on click
+  sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+      sidebar.classList.toggle('hidden');
+  });
+});
