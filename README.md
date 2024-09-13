@@ -23,4 +23,4 @@ The **Patient Engagement Platform** is an innovative and comprehensive web-based
 - **Payment Integration**: Stripe (or similar payment gateway)
 - **Deployment**: Deployed on platforms such as Heroku or AWS
 
-## Project Structure
+## Project Structure ├── public │ ├── css │ │ └── styles.css # Main stylesheet │ ├── js │ │ └── scripts.js # Main JavaScript file │ └── images │ ├── logo.png # Logo image │ └── background.jpg # Background image ├── routes │ └── api │ ├── auth.js # Authentication routes │ ├── appointments.js # Appointment management routes │ ├── payments.js # Payment processing routes │ ├── records.js # Health record routes │ └── emergency.js # Emergency alert routes ├── views │ ├── index.html # Homepage │ ├── login.html # Login page │ ├── appointments.html # Appointment management page │ ├── emergency.html # Emergency alert page │ ├── records.html # Health records page │ ├── reminders.html # Daily reminders page │ └── education.html # Education hub page ├── app.js # Main application file ├── package.json # Project metadata and dependencies ├── .env # Environment variables └── README.md # This file
